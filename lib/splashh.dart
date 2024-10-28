@@ -18,13 +18,13 @@ class _SplashViewState extends State<Splashh> {
   }
 
   _navigateToHome() async {
-    await Future.delayed(Duration(seconds: 3), () {});
+    await Future.delayed(const Duration(seconds: 3), () {});
     Navigator.of(context).pushReplacement(_createRoute());
   }
 
   Route _createRoute() {
     return PageRouteBuilder(
-      pageBuilder: (context, animation, secondaryAnimation) => Splash(),
+      pageBuilder: (context, animation, secondaryAnimation) => const Splash(),
       transitionsBuilder: (context, animation, secondaryAnimation, child) {
         const begin = Offset(1.0, 0.0); // Start from the right
         const end = Offset.zero; // End at the center

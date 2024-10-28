@@ -203,7 +203,7 @@ class _AddTaskScreenState extends State<AddTaskScreen> {
                       const Color.fromARGB(255, 88, 153, 91), // Text color
                   padding: const EdgeInsets.symmetric(
                       horizontal: 130, vertical: 10), // Button size
-                  textStyle: TextStyle(fontSize: 20), // Text size
+                  textStyle: const TextStyle(fontSize: 20), // Text size
                 ),
                 child: const Text(
                   'Add Task',
